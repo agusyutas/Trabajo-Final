@@ -1,0 +1,791 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+header{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    background-image: url('./img/logo-badbunny.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80px; 
+    height: 80px; 
+    margin-left: 20px;
+    margin-top: 5px; 
+}
+.logo-bad{
+    display: none;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 30px;
+}
+a{
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover{
+    transform: scale(1.2);
+    font-size: 25px;
+}
+
+/*MAIN*/
+main{
+    background-image: url(./img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed; 
+    padding-bottom: 20px;
+    width: 100vw;  
+    min-height: 100vh;
+    overflow-y: auto;
+}
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+.titulo-principal{
+    text-align: center;
+    padding: 30px;
+    padding-top: 100px;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.foto-badbunny{
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.2);
+}
+iframe {
+    width: 100%;
+    max-width: 375px;
+    height: 220px;
+    border-radius: 12px;
+    border: none;
+    margin-bottom: 20px;
+    padding-top: 40px;
+}
+.contenedor_principal{
+    max-width: 1366px;
+}
+.div-contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.div-principal{
+    background-color: #ffc0cb;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+    height: 157px;
+}
+.parrafo-principal{
+    padding: 10px;
+    text-align: left;
+    
+}
+.informacion-genero{
+    background-color: pink;
+    border-radius: 20px;
+    width: 1174px;
+    height: 270px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+.parrafo-generos{
+    padding: 20px;
+    text-align: left;
+}
+.div-canciones{
+    background-color: pink;
+    border-radius: 20px;
+    width: 1174px;
+    height: 350px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+.div-historia{
+    background-color: pink;
+    border-radius: 20px;
+    width: 1174px;
+    height: 350px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.p-historia{
+    padding: 20px;
+    text-align: left;
+}
+.parrafo-2{
+    padding: 20px;
+    text-align: left;
+}
+.div-video{
+    background-color: pink;
+    border-radius: 20px;
+    width: 600px;
+    height: 300px;
+    padding: 25px;
+    text-align: center;
+    margin: auto;
+}
+
+/*FOOTER*/
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    text-align: center;
+    margin-top: auto;    
+}
+.contenedor-footer{
+    padding-left: 600px;
+    padding-top: 25px;
+}
+.contenedor-footer a:hover{
+    transform: scale(1.2);
+    font-size: 50px;
+}
+.redes{
+    color: black;
+    font-size: 40px;
+}
+.nombre-red {
+    display: none;
+}
+
+
+
+
+
+/*DISCOS*/
+
+.menu-disco {
+    position: relative;
+}
+.barra-desplegable {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    list-style: none;
+    margin: 0;
+    white-space: nowrap;
+}
+.barra-desplegable li {
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+}
+.barra-desplegable li a {
+    color: white;
+    padding: 15px;
+    display: block;
+}
+.menu-disco:hover .barra-desplegable {
+    display: flex;
+    flex-direction: column;
+}
+.barra-desplegable li a:hover {
+    background-color: #555;
+    width: 100%;
+}
+.a-barra-desplegable:hover{
+    transform: none;
+    font-size: 20px;
+}
+
+
+/*MAIN*/
+
+.main-discos{
+    background-image: url(./img/yuyu.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed; 
+    width: 100vw;  
+    min-height: 100vh;
+    overflow-y: auto;
+}
+.contenido{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.contenido1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 30px;
+}
+.contenido2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 30px;
+}
+.contenido3{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 30px;
+}
+.contenido4{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 30px;
+}
+.informacion, .informacion1, .informacion2, .informacion3, .informacion4 {
+    background-color: pink;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.h1-discos{
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-size: 60px;
+    padding-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h2-discos{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor-h2-discos{
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+    scroll-margin-top: 100px;
+}
+.d1{
+    margin-right: 20px;
+}
+.p-discos{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    white-space: nowrap;
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.span-flecha{
+    display: inline-block;
+}
+.ul-lista {
+    background-color: pink;
+    padding: 30px;
+    border-radius: 10px;
+}
+.ul-lista .ol {
+    display: none;
+}
+.ul-lista .li-principal:hover .ol {
+    display: block;
+}
+.img-album{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.2);
+    border-radius: 10px;
+}
+.ol{
+    padding-top: 7px;
+}
+.li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+/*FOOTER*/
+.footer-redes{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    text-align: center;
+    margin-top: auto;
+}
+.contenedor-footerr{
+    padding-left: 600px;
+    padding-top: 25px;
+}
+.contenedor-footerr a:hover{
+    transform: scale(1.2);
+    font-size: 50px;
+}
+.redess{
+    color: black;
+    font-size: 40px;
+}
+.espacio-fo{
+    margin-bottom: 50px;
+}
+.contenedor-info{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.informacio-personal{
+    text-align: center; 
+    margin: 10px;
+    padding: 20px; 
+    background-color:pink; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.2);
+}
+.ulagus{
+    display: flex;
+    flex-direction: column; 
+    margin: 0 auto;
+    padding: 0;
+}
+.liagus{ 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.hagus{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 15px;
+}
+
+
+
+
+/*FORMULARIO*/
+
+/*HEADER*/
+.header-formulario{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+}
+
+
+
+/*MAIN*/
+.main-formulario {
+    background-image: url(./img/yuyu.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed; 
+    width: 100vw;  
+    min-height: 100vh;
+    overflow-y: auto;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-formulario {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+.h2-formulario {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.div-secciones {
+    margin-bottom: 15px;
+}
+
+.div-secciones label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.div-secciones input, .div-secciones select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.checkbox-selecciones {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.checkbox-selecciones label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+.checkbox-selecciones input {
+    margin-right: 10px;
+}
+
+.div-secciones button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.div-secciones button:hover {
+    background-color: rgb(34, 34, 34);
+}
+
+
+
+
+
+/*GRACIAS*/
+.div-gracias {
+    text-align: center;
+    background-color: pink;
+    padding: 30px;
+}
+.h2-gracias{
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+}
+.concierto-bad{
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVE*/
+
+/*TABLET*/
+
+/*tablet-index*/
+@media (max-width: 800px){
+    ul{
+        padding-right: 30px
+    }
+    .foto-badbunny{
+        display: none;
+    }
+    .parrafo-principal{
+        font-size: 18px;
+    }
+    .div-principal{
+        width: 550px;
+        height: 170px;
+    }
+    .informacion-genero{
+        background-color: pink;
+        border-radius: 20px;
+        width: 640px;
+        height: 500px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+    .parrafo-generos{
+        font-size: 18px;
+        padding-top: 20px;
+    }
+    .div-canciones{
+        background-color: pink;
+        border-radius: 20px;
+        width: 640px;
+        height: 580px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+    .parrafo-2{
+        font-size: 18px;
+    }
+    iframe {
+        width: 100%;
+        max-width: 335px;
+        height: 210px;
+        border-radius: 12px;
+        border: none;
+        margin-bottom: 10px;
+        padding-top: 20px;
+    }
+    .div-historia{
+        background-color: pink;
+        border-radius: 20px;
+        width: 650px;
+        height: 660px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .p-historia{
+        font-size: 18px;
+    }
+    .titulo-luna{
+        font-size: 22px;
+    }
+    .div-video{
+        width: 400px;
+        height: 300px;
+    }
+    .contenedor-footer{
+        padding-left: 40px;
+    }
+}
+
+
+
+
+/*tablet-discos*/
+@media (max-width: 800px){
+    .contenido, .contenido1, .contenido2, .contenido3, .contenido4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .d1{
+        padding-bottom: 10px;
+    }
+    .informacion{
+        width: 600px;
+        height: 330px;
+    }
+    .informacion1{
+        width: 600px;
+        height: 290px;
+    }
+    .informacion2{
+        width: 600px;
+        height: 210px;
+    }
+    .informacion3{
+        width: 600px;
+        height: 270px;
+    }
+    .informacion4{
+        width: 600px;
+        height: 280px;
+    }
+    .contenedor-footerr{
+        padding-left: 40px;
+    }
+}
+
+
+/*tablet-gracias*/
+@media (max-width: 800px){
+    .div-gracias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 670px;
+    }
+    .concierto-bad{
+        text-align: center;
+        width: 550px;
+        height: 350px;
+    }
+    .h2-gracias{
+        font-size: 26px;
+    }
+}
+
+
+
+/*mobile-index*/
+@media (max-width: 480px){
+    .titulo-principal{
+        font-size: 45px
+    }
+    .contenedor_principal{
+        display: flex;
+        flex-direction: column;
+        max-width: 480px;
+        min-width: 0px;
+    }
+    .foto-badbunny{
+        display: none;
+    }
+    .div-contain{
+        display: flex;
+        padding: 15px;
+    }
+    .parrafo-principal{
+        font-size: 15px;
+    }
+    .informacion-genero{
+        background-color: pink;
+        border-radius: 20px;
+        width: 400px;
+        height: 560px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+    .parrafo-generos{
+        font-size: 15px;
+        padding-top: 20px;
+    }
+   
+    .div-canciones{
+        background-color: pink;
+        border-radius: 20px;
+        width: 400px;
+        height: 580px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+    .parrafo-2{
+        font-size: 15px;
+    }
+    iframe {
+        width: 100%;
+        max-width: 335px;
+        height: 210px;
+        border-radius: 12px;
+        border: none;
+        margin-bottom: 10px;
+        padding-top: 20px;
+    }
+    .div-historia{
+        background-color: pink;
+        border-radius: 20px;
+        width: 400px;
+        height: 700px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .p-historia{
+        font-size: 15px;
+    }
+    .div-video{
+        background-color: pink;
+        border-radius: 20px;
+        width: 400px;
+        height: 300px;
+        padding: 25px;
+        text-align: center;
+        margin: auto;
+    }
+    .redes{
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+
+/*mobile-discos*/
+@media (max-width: 480px){
+    .contenido, .contenido1, .contenido2, .contenido3, .contenido4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .d1{
+        padding-bottom: 10px;
+    }
+    .informacion, .informacion1, .informacion2, .informacion3, .informacion4 {
+        margin: 8px;
+        width: 400px;
+        height: 510px;
+    }
+    .contenedor-footerr{
+        padding-left: 25px
+    }
+    .redess{
+        font-size: 30px;
+        padding: 5px;
+    }
+}
+
+/*mobile-formulario*/
+@media (max-width: 480px){
+    .contenedor-footer{
+        padding-left: 25px;
+    }
+    .redes{
+        font-size: 30px;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+/*mobile-gracias*/
+@media (max-width: 480px){
+    .div-gracias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 370px;
+    }
+    .concierto-bad{
+        text-align: center;
+        width: 400px;
+        height: 210px;
+    }
+    .h2-gracias{
+        font-size: 23px;
+    }
+}
+
+
+
